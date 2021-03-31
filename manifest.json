@@ -1,29 +1,33 @@
 {
-	"manifest_version": 2,
-	"name": "Twitter Links",
-	"version": "0.7",
-	"description": "Show the latest tweets that link to the current page.",
-	"author": "Maxim Leyzerovich",
-	"homepage_url": "https://twitter.com/round",
-	"icons": {
-		"16": "icon16.png",
-		"32": "icon32.png",
-		"48": "icon64.png",
-		"64": "icon64.png",
-		"128": "icon128.png"
-	},
-	"browser_action": {
-		 "default_title": "Twitter links to this page\u2026"
-	 },
- 	"permissions": [
-		"activeTab",
-	  "contextMenus"
-	 ],
-	"background": {
-		"scripts":["background.js"]
-	},
-	"content_scripts": [{
-		"matches": ["*://twitter.com/*&TwitterLinks"],
-		"js": ["content.js"]
-	}]
+  "manifest_version": 2,
+  "name": "Twitter Llinks",
+  "author": "James Knight",
+  "version": "0.1",
+  "description": "Search Twitter for tweets linking to this current page, drawn from https://github.com/round/Twitter-Links-beta for Chrome",
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon64.png",
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["activeTab", "contextMenus"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "twitter_links@reallsimplesteps.com"
+    }
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Twitter links to this page\u2026",
+    "default_icon": {
+      "48": "icons/icon64.png"
+    }
+  }
 }
