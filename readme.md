@@ -4,7 +4,7 @@
 2. Go to 'Debugging' in Firefox (`about:debugging`).
 4. Click 'Load Temporary Add on' and select the unzipped extension folder.
 
-![screenshot](https://camo.githubusercontent.com/edc65aa854e00ac2021a8bda200bc7b606a6ed14/68747470733a2f2f692e696d6775722e636f6d2f786463686451612e706e67)
+
 
 ## Feedback
 
