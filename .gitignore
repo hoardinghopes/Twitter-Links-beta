@@ -1,0 +1,9 @@
+# project files
+extensions.code-workspace
+.DS_Store
+
+# libraries
+node_modules
+
+# build artifacts
+*.zip

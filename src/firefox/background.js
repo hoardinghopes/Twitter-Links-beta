@@ -1,3 +1,6 @@
+/*eslint no-undef: "error"*/
+/*eslint-env webextensions*/
+
 function openSearch(tab) {
   browser.windows.getCurrent().then((currentWindow) => {
     let createData = {
